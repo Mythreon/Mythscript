@@ -7,10 +7,10 @@ function parser(tokens) {
     while (current < tokens.length) {
       let token = tokens[current];
   
-      if (token === 'return') {
+      if (token === 'give') {
         current++;
         const expr = parseExpression(tokens, current);
-        ast.push({ type: 'ReturnStatement', expression: expr });
+        ast.push({ type: 'giveStatement', expression: expr });
         current += expr.length;
       } else if (tokens[current + 1] === '=') {
         const varName = token;
