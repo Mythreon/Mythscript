@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MythScript - Empowering Code</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    a {
+      color: #ff9800;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #e68900;
+    }
+
+    header {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 2rem;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1500x600') center/cover no-repeat;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h2 {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      font-size: 3rem;
+      padding: 0 1rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1e1e1e;
+      border-left: 4px solid #ff9800;
+      padding-left: 1rem;
+    }
+    section p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .feature-item {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature-item:hover {
+      transform: translateY(-5px);
+    }
+    .feature-item h3 {
+      color: #ff9800;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .code-sample {
+      background: #2d2d2d;
+      color: #f1f1f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-x: auto;
+    }
+    .code-sample pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #ff9800;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e68900;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>MythScript</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Empowering Code with Simplicity</h2>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>About MythScript</h2>
+      <p>MythScript is a state-of-the-art programming language designed with simplicity and power in mind. Whether you’re building small scripts or full-fledged applications, MythScript offers an intuitive syntax and robust features to streamline your development process.</p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature-item">
+          <h3>Intuitive Syntax</h3>
+          <p>Experience clear and concise code that accelerates development and reduces complexity.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Dynamic Variables</h3>
+          <p>Handle data effortlessly with dynamic variables that adapt to your coding needs.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Interactive Environment</h3>
+          <p>Run and test your code in a live, interactive environment right from your browser.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Extensible & Flexible</h3>
+          <p>Build complex applications with support for loops, conditionals, functions, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="examples">
+      <h2>Code Examples</h2>
+      <div class="code-sample">
+        <pre><code>
+[Define variables]
+a = 10
+b = 5
+
+[Perform complex calculations]
+c = a + b ** a ** a ** a / a / b / b / b / b
+
+[Output the complicated result]
+return c
+        </code></pre>
+      </div>
+    </section>
+
+    <section id="variables">
+      <h2>Explore Variables</h2>
+      <p>Discover how MythScript handles dynamic variables and learn to use them effectively in your code.</p>
+      <a href="variables.html" class="btn">Learn More About Variables</a>
+    </section>
+
+    <section id="download">
+      <h2>Get Started with MythScript</h2>
+      <p>Check out the website that lets you write MythScript code.</p>
+      <a href="code.html" class="btn">Check it out!</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MythScript. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
