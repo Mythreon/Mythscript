@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MythScript</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #editor, #output { width: 100%; height: 200px; margin-bottom: 10px; padding: 10px; font-family: monospace; border: 1px solid #ccc; border-radius: 4px; }
+    #runBtn { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>MythScript</h1>
+  <textarea id="editor" placeholder="Enter your code here...">
+a = 10  [set a to 10]
+b = 5   [set b to 5]
+c = a + b  [add a and b]
+return c  [return the sum]
+return a * b  [also return the product]
+return b / a  [reverse it, why not?]
+  </textarea>
+  
+  <button id="runBtn">Run Code</button>
+  <pre id="output">Output will appear here...</pre>
+<!-- I included AS MANY CODE COMMENTS AS I COULD to make other people potentially understand the code.-->
+  <script src="evaluator.js"></script>
+  <script src="lexer.js"></script>
+  <script src="parser.js"></script>
+  <script src="repl.js"></script>
+
+</body>
+</html>
