@@ -5,5 +5,6 @@ This is a project of mine to make websites with huge calculations much easier to
 ### MYTHSCRIPT CHANGELOG
  
 _To view the whole changelog, please visit mythreon.github.io/Main/changelog.html_
+*This project is OPEN-SOURCE*
 Current version: 0.0
 - Nothing.
