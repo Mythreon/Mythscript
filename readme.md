@@ -10,8 +10,11 @@ _To view the whole changelog, please visit mythreon.github.io/Main/changelog.htm
 
 
 Current version: 0.01.1
+
 0.01.1
 - Changed return to give (and probably broke half of the code)
+
 0.01
+
 - Added basic functionality for math.
 - Nothing else.
