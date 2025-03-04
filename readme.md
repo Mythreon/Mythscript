@@ -9,5 +9,7 @@ _To view the whole changelog, please visit mythreon.github.io/Main/changelog.htm
 *This project is OPEN-SOURCE*
 
 
-Current version: 0.0
-- Nothing.
+Current version: 0.01
+
+- Added basic functionality for math.
+- Nothing else.
