@@ -5,7 +5,7 @@ function evaluator(ast) {
     let results = [];
   
     ast.forEach(statement => {
-      if (statement.type === 'giveStatement') {
+      if (statement.type === 'returnStatement') {
         results.push(evaluateExpression(statement.expression, variables));
       } else if (statement.type === 'Assignment') {
         variables[statement.varName] = evaluateExpression(statement.valueExpr, variables);
