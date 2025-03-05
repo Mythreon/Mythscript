@@ -14,7 +14,7 @@ function parser(tokens) {
         current += expr.length;
       } else if (tokens[current + 1] === '=') {
         const varName = token;
-        current += 2; // Skip the variable name and '='
+        current += 2; // Honestly do not ask me
         const valueExpr = parseExpression(tokens, current);
         ast.push({ type: 'Assignment', varName, valueExpr });
         current += valueExpr.length;
